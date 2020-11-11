@@ -1,3 +1,7 @@
+:root {
+
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -11,6 +15,7 @@ h2 {
 
 header {
   background-color: #2ECC71; }
+
 
 #logo-pic {
   background-color: #2ECC71;
@@ -62,6 +67,14 @@ header nav {
   width: auto;
   background-color: #2ECC71;
   clear: inherit; }
+
+article {
+    display: inline;
+}
+
+figcaption {
+    color: white;
+}
 
 @media (min-width: 550px) {
   #summary {

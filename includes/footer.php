@@ -1,4 +1,4 @@
-<div id="contact">
+<footer id="contact">
    <a href="contact.php" class="white_a">Contact us</a> to explore.<br>
   Please view this on desktop or laptop.<br>
   Our work is evolving - check us out again soon.<br>
@@ -11,4 +11,4 @@
     while you browse or use this website. If you do not agree to the
      following policy you may wish to cease viewing / using this website,<br>
       and or refrain from submitting your personal data to us.
-</div>
+</footer>
