@@ -15,9 +15,9 @@
 	//include_once 'includes/start_session.php';
 	include_once 'includes/header.php';
 ?>
-		<main id="landing-page">
-			<article id="first" class="clearfix">
-				<section id="summary">
+		<div id="landing-page">
+			<div id="first" class="clearfix">
+				<div id="summary">
 					<h1 class="summary-title">Making quality decisions, for one and all</h1>
 					<h2><br>Everyone makes decisions on a daily basis. <br><br></h2>
 						<h2>At Thymynd, we believe quality decisions are important for everyone as they can
@@ -26,51 +26,48 @@
 							 are <em>relevant</em> to them prior to real instances.<br> <br></h2>
 	<h2>Thymynd explores personalised experience for everyone to sharpen their decision making in the future.</h2>
 					</p>
-				</section>
-				<section>
-				<figure id="pic">
+				</div>
+				<div id="pic">
 					<img src="images/mental.jpg" alt="image representing a mentally diordered person">
-					<figcaption> An image representing a mentally diordered person </figcaption>
 					<br>
-				</figure>
-			</section>
-			</article>
+				</div>
+			</div>
 
-				<section id="contact_form" class="clearfix">
+				<div id="contact_form" class="clearfix">
 					<form action="includes/sub-inc.php" method="POST" class="form"><br>
 						<label class="form_label" for="text"> <strong> First Name </strong> </label><br><br>
 
 						<?php
 						//problem with GET?
 							if(isset($_GET['first'])) {
-								echo '<input class="form_input" type="text" name="first" accesskey="f" value="'.$_GET['first'].'"><br><br>';
+								echo '<input class="form_input" type="text" name="first" value="'.$_GET['first'].'"><br><br>';
 							}
 								else {
-									echo '<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name"><br><br>';
+									echo '<input class="form_input" type="text" name="first" placeholder="My First name"><br><br>';
 								}
 						 ?>
 
 						<label class="form_label" for="text"> <strong> Last Name </strong> </label><br><br>
 						<?php
 							if(isset($_GET['last'])) {
-								echo '<input class="form_input" type="text" name="last" accesskey="l"  value="'.$_GET['last'].'"><br><br>';
+								echo '<input class="form_input" type="text" name="last" value="'.$_GET['last'].'"><br><br>';
 							}
 							else {
-								echo '<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name"><br><br>';
+								echo '<input class="form_input" type="text" name="last" placeholder="My Last name"><br><br>';
 							}
 						 ?>
 
 						<label class="form_label" for="email"> <strong> Email </strong> </label><br><br>
 						<?php
 							if(isset($_GET['email'])) {
-								echo '<input class="form_input" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'"><br>';
+								echo '<input class="form_input" type="email" placeholder="Enter my email address" value="'.$_GET['email'].'"><br>';
 							}
 							else {
-								echo '<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address"><br>';
+								echo '<input class="form_input" type="email" name="email" placeholder="Enter my email address"><br>';
 							}
 						 ?>
 
-						<button class="form_button" type=submit name="submit" accesskey="s">I want to receive the latest updates</button>
+						<button class="form_button" type=submit name="submit">I want to receive the latest updates</button>
 
 					</form>
 
@@ -133,36 +130,36 @@
 						}
 					?>
 					<br>
-				</section>
+				</div>
 
-				<section id="icon-and-text" class="clearfix">
+				<div id="icon-and-text" class="clearfix">
 					<h2>Applications</h2>
-					<article><p>We pilot in the education sector, social services and justice services.
+					<p>We pilot in the education sector, social services and justice services.
 						The next stage will be for health researchers and clinicians.<br>
 						We aim to make Thymynd available to professionals in other industries
-						 for better decision making.</p><br></article>
+						 for better decision making.</p><br>
 						 <div class="row">
-							<figure class="ictext" class="col-lg-3 col-sm-12">
-								<img src="images/icon_learn.png" alt="Enhance the support of mental health and well-being to school children">
+							<div class="ictext" class="col-lg-3 col-sm-12">
+								<img src="images/icon_learn.png">
 								<p> Enhance the support of <br>mental health and well-<br>being to school children</p>
-							</figure>
-							<section class="ictext" class="col-lg-3 col-sm-12">
-								<img src="images/icon_jail.svg" alt="Strengthen personal resilience to minimise repeat offending">
+							</div>
+							<div class="ictext" class="col-lg-3 col-sm-12">
+								<img src="images/icon_jail.svg">
 								<p> Strengthen personal<br> resilience to minimise<br> repeat offending</p>
-							</section>
-							<section class="ictext" class="col-lg-3 col-sm-12">
-								<img src="images/icon_doc.png" alt="Provide more granular and consistent statistics for diagnosis">
+							</div>
+							<div class="ictext" class="col-lg-3 col-sm-12">
+								<img src="images/icon_doc.png">
 								<p> Provide more granular <br>and consistent statistics<br> for diagnosis</p>
-							</section>
-							<section class="ictext" class="col-lg-3 col-sm-12">
-								<img src="images/icon_prof.svg" alt="Facilitate better decision making at work and in life">
+							</div>
+							<div class="ictext" class="col-lg-3 col-sm-12">
+								<img src="images/icon_prof.svg">
 								<p> Facilitate better<br> decision making at <br>work and in life</p>
-							</section>
+							</div>
 						</div>
-				</section>
+				</div>
 <?php
 	include_once 'includes/footer.php';
 ?>
-		</main>
+		</div>
 	</body>
 </html>
