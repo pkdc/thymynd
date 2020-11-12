@@ -3,7 +3,7 @@
 	<head>
 		<title> Thymynd - Making quality decisions, for one and all</title>
 		<meta name="keywords" content="young offenders, youth offenders, custody,
-		 support, decision, decisions, decision making, quality decision, quality decision making,
+		 support, decision, decision making, quality decision, quality decision making,
 		 prison, psychiatry, mental, mental health, prepare, thought, data, for one and all">
 		<meta name="author" content="David Choy and Monique Ho">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
