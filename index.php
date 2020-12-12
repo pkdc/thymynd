@@ -10,11 +10,27 @@
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
-
+<!--
 <?php
 	//include_once 'includes/start_session.php';
 	include_once 'includes/header.php';
-?>
+?> -->
+
+<!-- header.php -->
+<body>
+	<header class="clearfix">
+		<img src="images/small_logo.png" alt="logo" style="height:60px">
+		<nav>
+			<ul id="nav-bar">
+				<li class="nav-bar-item"><a class="current" href="index.php">Home</a></li>
+				<!-- <li class="nav-bar-item"><a href="product.php">Product</a></li> -->
+				<li class="nav-bar-item"><a href="ref.php">Research</a></li>
+				<li class="nav-bar-item"><a href="about.php""#">About Us</a></li>
+				<li class="nav-bar-item"><a href="contact.php""#">Contact Us</a></li>
+			</ul>
+	</header>
+	<!-- header.php -->
+
 		<main id="landing-page">
 			<article id="first" class="clearfix">
 				<section id="summary">
@@ -40,7 +56,7 @@
 					<form action="includes/sub-inc.php" method="POST" class="form"><br>
 						<label class="form_label" for="text"> <strong> First Name </strong> </label><br><br>
 
-						<?php
+						<!-- <?php
 						//problem with GET?
 							if(isset($_GET['first'])) {
 								echo '<input class="form_input" type="text" name="first" accesskey="f" value="'.$_GET['first'].'"><br><br>';
@@ -48,33 +64,45 @@
 								else {
 									echo '<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name"><br><br>';
 								}
-						 ?>
+						 ?> -->
+
+						 <!-- shld not be in php -->
+						 <input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name"><br><br>
+						 <!-- shld not be in php -->
 
 						<label class="form_label" for="text"> <strong> Last Name </strong> </label><br><br>
-						<?php
+						<!-- <?php
 							if(isset($_GET['last'])) {
 								echo '<input class="form_input" type="text" name="last" accesskey="l"  value="'.$_GET['last'].'"><br><br>';
 							}
 							else {
 								echo '<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name"><br><br>';
 							}
-						 ?>
+						 ?> -->
+
+						 <!-- shld not be in php -->
+						 <input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name"><br><br>
+						 <!-- shld not be in php -->
 
 						<label class="form_label" for="email"> <strong> Email </strong> </label><br><br>
-						<?php
+						<!-- <?php
 							if(isset($_GET['email'])) {
 								echo '<input class="form_input" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'"><br>';
 							}
 							else {
 								echo '<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address"><br>';
 							}
-						 ?>
+						 ?> -->
+
+						 <!-- shld not be in php -->
+						 <input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address"><br>
+						 <!-- shld not be in php -->
 
 						<button class="form_button" type=submit name="submit" accesskey="s">I want to receive the latest updates</button>
 
 					</form>
 
-					<?php
+					<!-- <?php
 					//check the subscribe status
 					if(!isset($_GET['subscribe'])) {
 						echo " ";
@@ -117,9 +145,9 @@
 							}
 
 						}
-		 			?>
+		 			?> -->
 
-					<?php
+					<!-- <?php
 
 						//check the contact status
 						if(!isset($_GET['contact'])) {
@@ -131,7 +159,7 @@
 						else {
 							echo " ";
 						}
-					?>
+					?> -->
 					<br>
 				</section>
 
@@ -160,9 +188,26 @@
 							</section>
 						</div>
 				</section>
-<?php
+<!-- <?php
 	include_once 'includes/footer.php';
-?>
+?> -->
+
+<!-- php footer -->
+<footer id="contact">
+   <a href="contact.php" class="white_a">Contact us</a> to explore.<br>
+  Please view this on desktop or laptop.<br>
+  Our work is evolving - check us out again soon.<br>
+  <!-- <a href="unsub.php" class="white_a">Unsubscribe</a> -->
+  You can unsubscibe anytime by <a href="contact.php" class="white_a">emailing us</a>.<br>
+  This privacy policy notice is served by Thymynd,
+   under the website; https://thymynd.website. The purpose of<br>
+   this policy is to explain to you how we control, process, handle
+    and protect your personal information through the business and<br>
+    while you browse or use this website. If you do not agree to the
+     following policy you may wish to cease viewing / using this website,<br>
+      and or refrain from submitting your personal data to us.
+</footer>
+<!-- php footer -->
 		</main>
 	</body>
 </html>
