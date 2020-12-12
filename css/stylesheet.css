@@ -5,7 +5,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Arial, Helvetica, sans-serif; }
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 
 h1 {
   margin: 0; }
@@ -331,5 +332,3 @@ figcaption {
 
 #contact a:hover {
   color: #2ECC71; }
-
-/*# sourceMappingURL=stylesheet.css.map */
