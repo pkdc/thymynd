@@ -18,24 +18,27 @@
 
 <!-- header.php -->
 <body>
-	<header class="clearfix">
-		<img src="images/small_logo.png" alt="logo" style="height:60px">
+	<header>
+		<img id="logo" src="images/small_logo.png" alt="logo" style="height:67px">
 		<nav>
 			<ul id="nav-bar">
-				<li class="nav-bar-item"><a class="current" href="index.php">Home</a></li>
+				<li class="nav-bar-item"><a class="current" href="index.html">Home</a></li>
 				<!-- <li class="nav-bar-item"><a href="product.php">Product</a></li> -->
-				<li class="nav-bar-item"><a href="ref.php">Research</a></li>
+				<!-- <li class="nav-bar-item"><a href="ref.php">Research</a></li>
 				<li class="nav-bar-item"><a href="about.php""#">About Us</a></li>
-				<li class="nav-bar-item"><a href="contact.php""#">Contact Us</a></li>
+				<li class="nav-bar-item"><a href="contact.php""#">Contact Us</a></li> -->
+				<li class="nav-bar-item"><a href="ref.html""#">Research</a></li>
+				<li class="nav-bar-item"><a href="about_non_id.html""#">About Us</a></li>
+				<li class="nav-bar-item"><a href="contact.html""#">Contact Us</a></li>
 			</ul>
 	</header>
 	<!-- header.php -->
 
 		<main id="landing-page">
-			<article id="first" class="clearfix">
+			<article id="first">
 				<section id="summary">
-					<h1 class="summary-title">Making quality decisions, for one and all</h1>
-					<h2><br>Everyone makes decisions on a daily basis. <br><br></h2>
+					<h1 id="summary-title">Making quality decisions, for one and all</h1>
+					<h2 id="summary-content"><br>Everyone makes decisions on a daily basis. <br><br></h2>
 						<h2>At Thymynd, we believe quality decisions are important for everyone as they can
 						 bring us to very different outcomes in lives. A way to enhance decision making is to make
 						  space for individuals to reflect on scenarios that
@@ -44,15 +47,15 @@
 					</p>
 				</section>
 				<section>
-				<figure id="pic">
-					<img src="images/mental.jpg" alt="image representing a mentally diordered person">
-					<figcaption> An image representing a mentally diordered person </figcaption>
+				<figure id="fig-mental">
+					<img src="images/mental.jpg" alt="image representing a mentally diordered person" style="width:100%">
+					<figcaption id="fig-mental-cap"> An image representing a mentally diordered person </figcaption>
 					<br>
 				</figure>
 			</section>
 			</article>
 
-				<section id="contact_form" class="clearfix">
+				<section class="contact_form">
 					<form action="includes/sub-inc.php" method="POST" class="form"><br>
 						<label class="form_label" for="text"> <strong> First Name </strong> </label><br><br>
 
@@ -163,12 +166,12 @@
 					<br>
 				</section>
 
-				<section id="icon-and-text" class="clearfix">
+				<section id="icon-and-text">
 					<h2>Applications</h2>
 					<article><p>We pilot in the education sector, social services and justice services.
-						The next stage will be for health researchers and clinicians.<br>
-						We aim to make Thymynd available to professionals in other industries
-						 for better decision making.</p><br></article>
+						The next stage will be for health researchers and clinicians.</p>
+						<p>We aim to make Thymynd available to professionals in other industries
+						 for better decision making.</p></article>
 						 <div class="row">
 							<figure class="ictext" class="col-lg-3 col-sm-12">
 								<img src="images/icon_learn.png" alt="Enhance the support of mental health and well-being to school children">
@@ -194,11 +197,11 @@
 
 <!-- php footer -->
 <footer id="contact">
-   <a href="contact.php" class="white_a">Contact us</a> to explore.<br>
+   <a href="contact.html" class="white_a">Contact us</a> to explore.<br>
   Please view this on desktop or laptop.<br>
   Our work is evolving - check us out again soon.<br>
   <!-- <a href="unsub.php" class="white_a">Unsubscribe</a> -->
-  You can unsubscibe anytime by <a href="contact.php" class="white_a">emailing us</a>.<br>
+  You can unsubscibe anytime by <a href="contact.html" class="white_a">emailing us</a>.<br>
   This privacy policy notice is served by Thymynd,
    under the website; https://thymynd.website. The purpose of<br>
    this policy is to explain to you how we control, process, handle

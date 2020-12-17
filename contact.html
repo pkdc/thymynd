@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Thymynd - Making quality decisions, for one and all</title>
-		<meta name="keywords" content="young offenders, youth offenders, custody,
-		 support, decision, decision making, quality decision, quality decision making,
-		 prison, psychiatry, mental, mental health, prepare, thought, data, for one and all">
+		<title> Thymynd - Contact Us Through Email </title>
+		<meta name="keywords" content="Contact Us, ThyMynd">
 		<meta name="author" content="David Choy and Monique Ho">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	</head>
-<!--
-<?php
-	//include_once 'includes/start_session.php';
-	include_once 'includes/header.php';
+
+<!-- <?php
+  include_once "includes/header.php";
 ?> -->
 
 <!-- header.php -->
@@ -27,46 +24,40 @@
 				<!-- <li class="nav-bar-item"><a href="ref.php">Research</a></li>
 				<li class="nav-bar-item"><a href="about.php""#">About Us</a></li>
 				<li class="nav-bar-item"><a href="contact.php""#">Contact Us</a></li> -->
-        <li class="nav-bar-item"><a href="ref.html""#">Research</a></li>
+				<li class="nav-bar-item"><a href="ref.html""#">Research</a></li>
 				<li class="nav-bar-item"><a href="about_non_id.html""#">About Us</a></li>
 				<li class="nav-bar-item"><a href="contact.html""#">Contact Us</a></li>
 			</ul>
 	</header>
 	<!-- header.php -->
+<section id="contact-us">
+	<h1> Send email to us</h1>
+	<form action="includes/contact-inc.php" method="POST" class="contact_form">
+	  <label class="form_label" for="text"> Name </label><br>
+	  <input name="name" type="text" class="form_input" placeholder="My name"> </input><br><br>
 
+	  <label class="form_label" for="text"> Email </label><br>
+	  <input name="email" type="email" class="form_input" placeholder="My email"> </input><br><br>
+
+	  <label class="form_label" for="text"> Subject </label><br>
+	  <input name="subject" type="text" class="form_input" placeholder="Subject"> </input><br><br>
+
+	  <label class="form_label" for="text"> Message </label><br>
+	  <textarea name="message" class="form_input" placehoder="My message"> </textarea><br><br>
+
+	  <button class="form_button" name="submit" type="submit"> Send My Message </button>
+	</form>
+</section>
 <!-- <?php
-  include_once "includes/start_session.php";
-  include_once "includes/header.php";
- ?> -->
-
-
-<div id="us-no-id">
-  <h1>About Us</h1>
-  <h2>ThyMynd</h2>
-  <p>
-    Noun | /ðʌɪ . mʌɪnd/ | pronounced as Thy-mind</strong><br>
-    We played with the words ‘Your Mind’, but ultimately Thymynd is about facilitating you for quality decision making.
-  </p>
-  <p>
-     The friends met at the College X years ago and have been in touch for badminton, food, travel (and a long list of random stuff) since then.<br>
-   One day, they deep-dived in the observations of personal resilience and mental health support at school levels. The discussion resonated with them so much that, they want to make Thymynd work for one and for all.
-  </p>
-</div>
-
-<!-- <div id="team-no-id">
-    <img src="https://www.imdb.com/title/tt4154664/mediaviewer/rm123368960/" alt="Captain Marvel">
-
-    <img src="https://en.wikipedia.org/wiki/Iron_Man" alt="Iron man"> -->
-<!-- <?php
-  include_once 'includes/footer.php';
+  include_once "includes/footer.php";
 ?> -->
 <!-- php footer -->
 <footer id="contact">
-   <a href="contact.html" class="white_a">Contact us</a> to explore.<br>
+   <a href="contact.php" class="white_a">Contact us</a> to explore.<br>
   Please view this on desktop or laptop.<br>
   Our work is evolving - check us out again soon.<br>
   <!-- <a href="unsub.php" class="white_a">Unsubscribe</a> -->
-  You can unsubscibe anytime by <a href="contact.html" class="white_a">emailing us</a>.<br>
+  You can unsubscibe anytime by <a href="contact.php" class="white_a">emailing us</a>.<br>
   This privacy policy notice is served by Thymynd,
    under the website; https://thymynd.website. The purpose of<br>
    this policy is to explain to you how we control, process, handle
