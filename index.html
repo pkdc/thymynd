@@ -35,7 +35,7 @@
 	<!-- header.php -->
 
 		<main id="landing-page">
-			<article id="first">
+			<article id="first" class="clearfix">
 				<section id="summary">
 					<h1 id="summary-title">Making quality decisions, for one and all</h1>
 					<h2 id="summary-content"><br>Everyone makes decisions on a daily basis. <br><br></h2>
@@ -48,61 +48,75 @@
 				</section>
 				<section>
 				<figure id="fig-mental">
-					<img src="images/mental.jpg" alt="image representing a mentally diordered person" style="width:100%">
+					<img id="fig-mental-img" src="images/mental.jpg" alt="image representing a mentally diordered person" style="width:100%" style="height:100%">
 					<figcaption id="fig-mental-cap"> An image representing a mentally diordered person </figcaption>
-					<br>
 				</figure>
 			</section>
 			</article>
+			<section>
+				<!-- <button id="expand-form" onclick="expand()"> Subscribe To Learn More </button> -->
+				<button id="expand-form"> Subscribe To Learn More </button>
+			</section>
+
 
 				<section class="contact_form">
-					<form action="includes/sub-inc.php" method="POST" class="form"><br>
-						<label class="form_label" for="text"> <strong> First Name </strong> </label><br><br>
+					<form action="includes/sub-inc.php" method="POST" class="form">
+						<div>
+							<label class="form_label" for="text">  First Name </label>
+						</div>
 
 						<!-- <?php
 						//problem with GET?
 							if(isset($_GET['first'])) {
-								echo '<input class="form_input" type="text" name="first" accesskey="f" value="'.$_GET['first'].'"><br><br>';
+								echo '<input class="form_input" type="text" name="first" accesskey="f" value="'.$_GET['first'].'">';
 							}
 								else {
-									echo '<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name"><br><br>';
+									echo '<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name">';
 								}
 						 ?> -->
 
 						 <!-- shld not be in php -->
-						 <input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name"><br><br>
+						 <div>
+						 	<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name">
+						 </div>
 						 <!-- shld not be in php -->
-
-						<label class="form_label" for="text"> <strong> Last Name </strong> </label><br><br>
+						<div>
+							<label class="form_label" for="text"> Last Name</label>
+						</div>
 						<!-- <?php
 							if(isset($_GET['last'])) {
-								echo '<input class="form_input" type="text" name="last" accesskey="l"  value="'.$_GET['last'].'"><br><br>';
+								echo '<input class="form_input" type="text" name="last" accesskey="l"  value="'.$_GET['last'].'">';
 							}
 							else {
-								echo '<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name"><br><br>';
+								echo '<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name">';
 							}
 						 ?> -->
 
 						 <!-- shld not be in php -->
-						 <input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name"><br><br>
+						<div>
+						 	<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name">
+						</div>
 						 <!-- shld not be in php -->
-
-						<label class="form_label" for="email"> <strong> Email </strong> </label><br><br>
+						<div>
+							<label class="form_label" for="email"> Email </label>
+						</div>
 						<!-- <?php
 							if(isset($_GET['email'])) {
-								echo '<input class="form_input" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'"><br>';
+								echo '<input class="form_input" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'">';
 							}
 							else {
-								echo '<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address"><br>';
+								echo '<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address">';
 							}
 						 ?> -->
 
 						 <!-- shld not be in php -->
-						 <input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address"><br>
+						 <div>
+						 	<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address">
+						 </div>
 						 <!-- shld not be in php -->
-
-						<button class="form_button" type=submit name="submit" accesskey="s">I want to receive the latest updates</button>
-
+						<div>
+							<button class="form_button" type=submit name="submit" accesskey="s">I want to receive the latest updates</button>
+						</div>
 					</form>
 
 					<!-- <?php
@@ -163,7 +177,7 @@
 							echo " ";
 						}
 					?> -->
-					<br>
+
 				</section>
 
 				<section id="icon-and-text">
@@ -212,5 +226,6 @@
 </footer>
 <!-- php footer -->
 		</main>
+		<script src="app.js"> </script>
 	</body>
 </html>
