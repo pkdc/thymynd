@@ -340,6 +340,12 @@ input[type=email], input[type=text] {
 }
 
 
+/* @media (min-width: 641px) {
+  .hide-tab-head {
+    display: none;
+  }
+} */
+
 /* mobile phone */
 @media (max-width: 640px) {
     /* screen size dependent */
@@ -370,6 +376,13 @@ input[type=email], input[type=text] {
        font-weight: 600;
        display: inline-block;
        transition: background-color ease 0.3s;
+     }
+
+     .nav-bar-item a:active {
+       text-decoration: none;
+       color: var(--thymynd-green, green);
+       background-color: white;
+       /* font-weight: 800; */
      }
 
     /* screen size dependent */
