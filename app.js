@@ -4,6 +4,6 @@
 //   document.querySelector('.form').classList.toggle('show');
 // }
 
-document.getElementById("expand-form").addEventListener('click', () => {
+document.getElementById("expand-form-btn").addEventListener('click', () => {
   document.querySelector('.form').classList.toggle('show');
 });
