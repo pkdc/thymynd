@@ -378,7 +378,7 @@ input[type=email], input[type=text] {
        transition: background-color ease 0.3s;
      }
 
-     .nav-bar-item a:active {
+     .nav-bar-item a:hover {
        text-decoration: none;
        color: var(--thymynd-green, green);
        background-color: white;
