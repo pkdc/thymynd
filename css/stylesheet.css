@@ -186,9 +186,18 @@ input[type=email], input[type=text] {
       }
 
      /* screen size dependent */
-      #summary h1, #reference h1, #us h1, #us-no-id h1, #contact-us h1 {
+      #summary h1, #reference h1, #us h1, #us-no-id h1 {
         /* margin to 0, to remove the white space between header and main text */
         margin: 0;
+        font-size: 2.6rem;
+        font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
+        font-weight: 900;
+      }
+
+      /* screen size dependent */
+      #contact-us h1 {
+        margin: 0px 0 0 0;
+        padding-top: 60px;
         font-size: 2.6rem;
         font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
         font-weight: 900;
@@ -401,9 +410,18 @@ input[type=email], input[type=text] {
       }
 
      /* screen size dependent */
-      #summary h1, #reference h1, #us h1, #us-no-id h1, #contact-us h1 {
+      #summary h1, #reference h1, #us h1, #us-no-id h1 {
         /* margin to 0, to remove the white space between header and main text */
         margin: 0;
+        font-size: 2.6rem;
+        font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
+        font-weight: 900;
+      }
+
+      /* screen size dependent */
+      #contact-us h1 {
+        margin: 0px 0 0 0;
+        padding-top: 60px;
         font-size: 2.6rem;
         font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
         font-weight: 900;
