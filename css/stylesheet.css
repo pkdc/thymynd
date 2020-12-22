@@ -242,7 +242,7 @@ input[type=email], input[type=text] {
      #expand-form-btn {
        background-color: white;
        color: var(--thymynd-green, green);
-       padding: 10px;
+       padding: 12px;
        margin: 20px 0px 20px 0px;
        cursor: pointer;
        /* opacity: 0.9; */
