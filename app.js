@@ -5,5 +5,6 @@
 // }
 
 document.getElementById("expand-form-btn").addEventListener('click', () => {
+  document.getElementById("expand-form-btn").classList.toggle("change-colour-grey");
   document.querySelector('.form').classList.toggle('show');
 });
