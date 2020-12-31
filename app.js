@@ -6,13 +6,13 @@ expandForm.addEventListener('click', () => {
   const formStyle = window.getComputedStyle(form);
   const formDisplay = formStyle.getPropertyValue('display');
 
-  // display it if hidden
+  // display it if it's hidden
   if (formDisplay === "none") {
     expandForm.classList.toggle("change-colour-grey");
     form.classList.toggle('show');
   }
 
-  // hide it if shown
+  // hide it if it's shown
   else if (formDisplay === "block") {
     expandForm.classList.toggle("change-colour-white");
     form.classList.toggle('show');
