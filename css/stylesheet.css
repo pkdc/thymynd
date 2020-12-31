@@ -2,6 +2,7 @@
   --thymynd-green: #2ECC71;
   --thymynd-green_grad: #28B363;
   --thymynd-grey: #EAECEE;
+  --thymynd-grey2:#c6ccd2;
   --thymynd-orange0: #ffdb99;
   --thymynd-orange: orange;
 }
@@ -136,7 +137,7 @@ header {
 } */
 
 .form_input:focus  {
-  border: solid 5px var(--thymynd-orange0, #ffdb99);
+  border: solid 5px var(--thymynd-orange, orange);
   padding: 15px;
   /* background-color: var(--thymynd-grey); */
 }
@@ -497,7 +498,7 @@ input[type=email], input[type=text] {
 
      /* screen size dependent, mobile not needed */
      .form_input:hover  {
-       border: solid 3px var(--thymynd-orange, orange);
+       border: solid 3px var(--thymynd-grey2, #c6ccd2);
        padding: 17px;
        /* background-color: var(--thymynd-grey); */
      }
@@ -651,10 +652,14 @@ input[type=email], input[type=text] {
   display:block;
 }
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 .change-colour-grey {
   background-color: var(--thymynd-grey, grey);
+}
+
+.change-colour-white {
+  background-color: white;
 }
