@@ -263,6 +263,17 @@ input[type=email], input[type=text] {
        font-size: 16px;
      }
 
+     #expand-form-btn .fa-chevron-circle-down {
+         display: none;
+         /* margin-left: 10%;
+         margin-right: 10%;
+         font-size: 20px; */
+     }
+
+     #expand-form-btn #exp-icon-down1 {
+         /* display: none; */
+     }
+
      /* screen size dependent, Not needed*/
      /* #expand-form-btn:hover {
        background-color: var(--thymynd-grey, grey);
@@ -328,7 +339,7 @@ input[type=email], input[type=text] {
        animation-duration: 1.5s;
      }
 
-/* screen size dependent */
+     /* screen size dependent */
      .ictext {
        width: 100%;
        /* margin: 0 10% 0 10%; */
@@ -358,8 +369,6 @@ input[type=email], input[type=text] {
        margin: 10px 20px 10px -10px;
        /* margin-left: 5px; */
      }
-
-
 
      .ic-img-text {
          margin: 10px 20px 10px 15px;
@@ -567,6 +576,12 @@ input[type=email], input[type=text] {
      /* hides individual key fields (as in key value pairs) in the reference page */
      .hide-tab-head {
        display: none;
+     }
+
+     #expand-form-btn .fa-chevron-circle-down {
+         margin-left: 10%;
+         margin-right: 10%;
+         font-size: 25px;
      }
 }
 
