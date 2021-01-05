@@ -652,14 +652,6 @@ input[type=email], input[type=text] {
   display:block;
 }
 
-/* .hide {
-  display: none;
-} */
-
 .change-colour-grey {
   background-color: var(--thymynd-grey, grey);
-}
-
-.change-colour-white {
-  background-color: white;
 }

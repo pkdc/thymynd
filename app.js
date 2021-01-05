@@ -12,14 +12,9 @@ expandForm.addEventListener('click', () => {
     form.classList.toggle('show');
   }
 
-  // hide it if it's shown
+  // hide it if it's shown, and also if there is a bug introducing another display value i.e. not none
   else if (formDisplay === "block") {
-    expandForm.classList.toggle("change-colour-white");
+    expandForm.classList.toggle("change-colour-grey");
     form.classList.toggle('show');
-  }
-
-  // just in case there is a bug and introduced another display value
-  else {
-      form.classList.toggle('show');
   }
 });
