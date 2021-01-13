@@ -25,12 +25,19 @@ html, body {
   /* box-sizing: border-box; */
 }
 
-article, p, section {
+h1, h2, h3, h4, h5, p, article, section, div, footer {
   line-height: 1.58;
+  animation-name: text-fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes text-fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 header {
-  background-color: var(--thymynd-green, green);
+  background-color: var(--thymynd-green, #2ECC71);
 }
 
 .nav-bar-btn-mob {
@@ -57,11 +64,6 @@ animation-duration: 1s; */
 }
 
 
-/* @keyframes landing-fade-in {
-  0% {opacity: 0;}
-  100% {opacity: 1}
-} */
-
 /* @keyframes linear-gradient-change {
   0% {background-image: linear-gradient(to left, var(--thymynd-green), var(--thymynd-green_grad));}
 
@@ -74,14 +76,8 @@ animation-duration: 1s; */
 /* width: 100%; */
 /* height: auto;
 clear: both; */
-animation-name: first-fade-in;
-animation-duration: 1s;
 }
 
- @keyframes first-fade-in {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
- }
 
 #fig-mental-img {
     /* display: inline-block; */
@@ -96,7 +92,7 @@ animation-duration: 1s;
 
 .green-bkg-btn {
   background-color: white;
-  color: var(--thymynd-green, green);
+  color: var(--thymynd-green, #2ECC71);
   cursor: pointer;
   border: none;
   font-weight: bold;
@@ -104,13 +100,6 @@ animation-duration: 1s;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease;
-  animation-name: expand-fade-in;
-  animation-duration: 1s;
-}
-
-@keyframes expand-fade-in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
 }
 
 .form {
@@ -121,17 +110,7 @@ animation-duration: 1s;
   text-align: center;
   background-color: var(--thymynd-grey, grey);
   /* display: none; */
-  /* animation-name: contact-fade-in;
-  animation-duration: 1.2s; */
 }
-
-/* @keyframes contact-fade-in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-} */
-/* .form {
-  transition: all 0.3s ease;
-} */
 
 /* .form_input:hover {
   background-color: var(--thymynd-orange0, #ffdb99);
@@ -145,11 +124,6 @@ animation-duration: 1s;
 
 input[type=email], input[type=text] {
   font-family: Monospace;
-}
-
-@keyframes ictext-fade-in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
 }
 
 /* different screen sizes */
@@ -176,7 +150,13 @@ input[type=email], input[type=text] {
       /* display: inline-block; */
       /* text-align: center; */
       position: relative;
-      padding-bottom: 5px;
+      /* margin: 0; */
+      padding-bottom: 0px;
+     }
+
+     header nav ul {
+         padding: 0;
+         margin: 0;
      }
 
      .nav-bar-btn-mob {
@@ -190,24 +170,31 @@ input[type=email], input[type=text] {
 
       .nav-bar-item {
         display: block;
+        background-color: white;
+        padding: 5px;
+        transition: all ease 0.3s;
       }
 
     /* screen size dependent */
      .nav-bar-item a {
        /* text-decoration: none; */
-       color: white;
+       color:  var(--thymynd-green, #2ECC71);
        padding: 5px 10px;
-       /* margin: 1000px 0 1100px 0; */
-       font-weight: 600;
-       /* display: inline-block; */
-       transition: background-color ease 0.3s;
-       /* margin: 0; */
+       font-weight: 700;
+       font-size: 20px;
+       margin: 20px;
+       transition: all ease 0.3s;
+     }
+
+     .nav-bar-item:hover {
+         color: var(--thymynd-green, #2ECC71);
+         background-color: var(--thymynd-grey, grey);
      }
 
      .nav-bar-item a:hover {
-       text-decoration: none;
-       color: var(--thymynd-green, green);
-       background-color: white;
+         link-decoration: none;
+         text-decoration: none;
+         color: var(--thymynd-orange, orange);
        /* font-weight: 800; */
      }
 
