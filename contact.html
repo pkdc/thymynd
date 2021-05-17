@@ -42,7 +42,7 @@
 	<section class="contact_form">
 		<form action="includes/sub-inc.php" method="POST">
 			<div>
-				<label class="form_label" for="text"> Name </label>
+				<label class="form_label" for="con-name"> Name </label>
 			</div>
 
 			<!-- <?php
@@ -57,12 +57,12 @@
 
 			 <!-- shld not be in php -->
 			 <div>
-				<input class="form_input" type="text" name="name" accesskey="n" placeholder="My name">
+				<input class="form_input" id="con-name" type="text" name="name" accesskey="n" placeholder="My name">
 			 </div>
 			 <!-- shld not be in php -->
 
 			<div>
-				<label class="form_label" for="email"> Email </label>
+				<label class="form_label" for="con-email"> Email </label>
 			</div>
 			<!-- <?php
 				if(isset($_GET['email'])) {
@@ -75,23 +75,23 @@
 
 			 <!-- shld not be in php -->
 			 <div>
-				<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address">
+				<input class="form_input" id="con-email" type="email" name="email" accesskey="e" placeholder="Enter my email address">
 			 </div>
 			 <!-- shld not be in php -->
 			<div>
-				<label class="form_label" for="text"> Subject </label>
+				<label class="form_label" for="con-subject"> Subject </label>
 			</div>
 
 			<div>
-				<input name="subject" type="text" class="form_input" placeholder="Subject"> </input>
+				<input name="subject" id="con-subject" type="text" class="form_input" placeholder="Subject"> </input>
 			</div>
 
 			<div>
-				<label class="form_label" for="text"> Message </label>
+				<label class="form_label" for="con-msg"> Message </label>
 			</div>
 
 			<div>
-				 <textarea name="message" class="form_input" placehoder="My message"> </textarea>
+				 <textarea name="message" id="con-msg" class="form_input" placehoder="My message"> </textarea>
 			</div>
 
 			<div>

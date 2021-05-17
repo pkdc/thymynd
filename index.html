@@ -69,56 +69,56 @@
 				<section class="contact_form">
 					<form action="includes/sub-inc.php" method="POST" class="form">
 						<div>
-							<label class="form_label" for="text">  First Name </label>
+							<label class="form_label" for="sub-fname">  First Name </label>
 						</div>
 
 						<!-- <?php
 						//problem with GET?
 							if(isset($_GET['first'])) {
-								echo '<input class="form_input" type="text" name="first" accesskey="f" value="'.$_GET['first'].'">';
+								echo '<input class="form_input" id="sub-fname" type="text" name="first" accesskey="f" value="'.$_GET['first'].'">';
 							}
 								else {
-									echo '<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name">';
+									echo '<input class="form_input" id="sub-fname" type="text" name="first" accesskey="f" placeholder="My First name">';
 								}
 						 ?> -->
 
 						 <!-- shld not be in php -->
 						 <div>
-						 	<input class="form_input" type="text" name="first" accesskey="f" placeholder="My First name">
+						 	<input class="form_input" id="sub-fname" type="text" name="first" accesskey="f" placeholder="My First name">
 						 </div>
 						 <!-- shld not be in php -->
 						<div>
-							<label class="form_label" for="text"> Last Name</label>
+							<label class="form_label" for="sub-lname"> Last Name</label>
 						</div>
 						<!-- <?php
 							if(isset($_GET['last'])) {
-								echo '<input class="form_input" type="text" name="last" accesskey="l"  value="'.$_GET['last'].'">';
+								echo '<input class="form_input" id="sub-lname" type="text" name="last" accesskey="l"  value="'.$_GET['last'].'">';
 							}
 							else {
-								echo '<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name">';
+								echo '<input class="form_input" id="sub-lname" type="text" name="last" accesskey="l" placeholder="My Last name">';
 							}
 						 ?> -->
 
 						 <!-- shld not be in php -->
 						<div>
-						 	<input class="form_input" type="text" name="last" accesskey="l" placeholder="My Last name">
+						 	<input class="form_input" id="sub-lname" type="text" name="last" accesskey="l" placeholder="My Last name">
 						</div>
 						 <!-- shld not be in php -->
 						<div>
-							<label class="form_label" for="email"> Email </label>
+							<label class="form_label" for="sub-email"> Email </label>
 						</div>
 						<!-- <?php
 							if(isset($_GET['email'])) {
-								echo '<input class="form_input" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'">';
+								echo '<input class="form_input" id="sub-email" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'">';
 							}
 							else {
-								echo '<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address">';
+								echo '<input class="form_input" id="sub-email" type="email" name="email" accesskey="e" placeholder="Enter my email address">';
 							}
 						 ?> -->
 
 						 <!-- shld not be in php -->
 						 <div>
-						 	<input class="form_input" type="email" name="email" accesskey="e" placeholder="Enter my email address">
+						 	<input class="form_input" id="sub-email" type="email" name="email" accesskey="e" placeholder="Enter my email address">
 						 </div>
 						 <!-- shld not be in php -->
 						<div>

@@ -1,6 +1,7 @@
 <?php
 
-  //check if it's through submit button
+  // check if it's accessed through submit button
+  // in case someone accessed this through other method
   if (!isset($_POST['submit'])) {
     header("Location: ../index.php?subscribe=error");
   }
@@ -8,6 +9,7 @@
       //include_once 'dbh-inc.php';
       include_once 'dbh-inc-local.php';
 
+      // get the info from the URL
       $fname = $_POST['first'];
       $lname = $_POST['last'];
       $email = $_POST['email'];
@@ -24,7 +26,8 @@
             header("Location: ../index.php?subscribe=invalidemail");
           }
           else {
-            //check for valid first and last name
+            // check for valid first and last name
+            // Elon Musk's son's name may not pass ^^
             if (!preg_match("/^[a-zA-Z]*$/", $fname) || !preg_match("/^[a-zA-Z]*$/",$lname)) {
               // header("Location: ../index.php?subscribe=char&email=$email");
               header("Location: ../index.php?subscribe=char");
