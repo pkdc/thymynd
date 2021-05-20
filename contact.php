@@ -16,19 +16,19 @@
 
 <h1 class="para"> Send email to us</h1>
 <form action="includes/contact-inc.php" method="POST" class="contact_form">
-  <label class="form_label" for="text"> Name </label><br>
-  <input name="name" type="text" class="form_input" placeholder="My name"> </input><br><br>
+  <label class="form-label" for="text"> Name </label><br>
+  <input name="name" type="text" class="form-input" placeholder="My name"> </input><br><br>
 
-  <label class="form_label" for="text"> Email </label><br>
-  <input name="email" type="email" class="form_input" placeholder="My email"> </input><br><br>
+  <label class="form-label" for="text"> Email </label><br>
+  <input name="email" type="email" class="form-input" placeholder="My email"> </input><br><br>
 
-  <label class="form_label" for="text"> Subject </label><br>
-  <input name="subject" type="text" class="form_input" placeholder="Subject"> </input><br><br>
+  <label class="form-label" for="text"> Subject </label><br>
+  <input name="subject" type="text" class="form-input" placeholder="Subject"> </input><br><br>
 
-  <label class="form_label" for="text"> Message </label><br>
-  <textarea name="message" class="form_input" placehoder="My message"> </textarea><br><br>
+  <label class="form-label" for="text"> Message </label><br>
+  <textarea name="message" class="form-input" placehoder="My message"> </textarea><br><br>
 
-  <button class="form_button" name="submit" type="submit"> Send My Message </button>
+  <button class="form-button" name="submit" type="submit"> Send My Message </button>
 </form>
 
 <?php
