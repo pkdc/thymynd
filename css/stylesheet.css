@@ -266,8 +266,8 @@ input[type="text"] {
 
   /* screen size dependent */
   #fig-mental {
-    display: inline-block;
-    margin: 10px 10% 10px 10%;
+    display: block;
+    margin: 0px 10% 5px 10%;
     /* position: absolute;
        right: 3%;
        top: 20%; */
@@ -322,6 +322,16 @@ input[type="text"] {
     font-size: 16px;
   }
 
+  .form-input-checkbox {
+    margin-top: 40px;
+  }
+
+  .form-label-checkbox {
+    color: var(--thymynd-orange, orange);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+  }
   /* screen size dependent, mobile not needed */
   /* .form-input:hover  {
        border: solid 3px var(--thymynd-orange, orange);
@@ -334,7 +344,7 @@ input[type="text"] {
     background-color: var(--thymynd-green, green);
     color: white;
     padding: 19px;
-    margin: 60px 0px 60px 0px;
+    margin: 20px 0px 60px 0px;
     cursor: pointer;
     border: none;
     border-radius: 35px;
@@ -548,16 +558,15 @@ input[type="text"] {
     /* background-color: var(--thymynd-grey); */
   }
 
-  .form-input_checkbox {
+  .form-input-checkbox {
     margin-top: 40px;
   }
 
-  .form-label_checkbox {
+  .form-label-checkbox {
     color: var(--thymynd-orange, orange);
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    font-weight: bold;
   }
   /* screen size dependent */
   .form-btn {
