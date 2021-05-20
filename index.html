@@ -46,11 +46,11 @@
 			<article id="first" class="clearfix">
 				<section id="summary">
 					<h1 id="summary-title">Making quality decisions, for one and all</h1>
-					<h2 id="summary-content"><br>Everyone makes decisions on a daily basis. <br><br></h2>
+					<h2 id="summary-content"><br>Everyone makes decisions on a daily basis.</h2>
 						<h2>At Thymynd, we believe quality decisions are important for everyone as they can
 						 bring us to very different outcomes in lives. A way to enhance decision making is to make
 						  space for individuals to reflect on scenarios that
-							 are <em>relevant</em> to them prior to real instances.<br> <br></h2>
+							 are <em>relevant</em> to them prior to real instances.</h2>
 	<h2>Thymynd explores personalised experience for everyone to sharpen their decision making in the future.</h2>
 					</p>
 				</section>
@@ -65,11 +65,11 @@
 				<button id="expand-form-btn" class="green-bkg-btn"><i class="fas fa-chevron-circle-down" id="exp-icon-down1"></i>Learn More<i class="fas fa-chevron-circle-down" id="exp-icon-down2"></i></button>
 			</section>
 
-
 				<section class="contact_form">
-					<form action="includes/sub-inc.php" method="POST" class="form">
+					<!-- <form action="includes/sub-inc.php" method="POST" class="form"> -->
+						<form class="form">
 						<div>
-							<label class="form_label" for="sub-fname">  First Name </label>
+							<label class="form_label" for="sub-fname" required>  First Name </label>
 						</div>
 
 						<!-- <?php
@@ -118,9 +118,13 @@
 
 						 <!-- shld not be in php -->
 						 <div>
-						 	<input class="form_input" id="sub-email" type="email" name="email" accesskey="e" placeholder="Enter my email address">
+						 	<input class="form_input" id="sub-email" type="email" name="email" accesskey="e" placeholder="Enter my email address" required>
 						 </div>
 						 <!-- shld not be in php -->
+						 <div>
+							 <input class="form_input_checkbox" type="checkbox" name="agree" id="T-and-C" required>
+							 <label class="form_label_checkbox" for="T-and-C">I agree to the terms and conditions</label>
+						 </div>
 						<div>
 							<button class="form-btn" type=submit name="submit" accesskey="s">I want to receive the latest updates</button>
 						</div>
