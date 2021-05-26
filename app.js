@@ -1,4 +1,6 @@
 //  code for nav-bar-btn-mob
+"use strict";
+
 const navBarBtn = document.querySelector(".nav-bar-btn-mob");
 const navBar = document.getElementById("nav");
 
