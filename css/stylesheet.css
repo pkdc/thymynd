@@ -116,8 +116,16 @@ figcaption a {
   transition: background-color 0.3s ease;
 }
 
+#expand-form-btn:focus {
+  outline: none;
+}
+
 .form {
   display: none;
+}
+
+.form-btn:focus {
+  outline: none;
 }
 
 .contact_form {
@@ -211,8 +219,6 @@ input[type="text"] {
     text-decoration: none;
     color: var(--thymynd-orange, orange);
   } */
-
-  /* screen size dependent */
 
   /* screen size dependent */
   #summary {
