@@ -95,6 +95,9 @@ animation-duration: 1s; */
 
   100% {background-image: linear-gradient(to left, var(--thymynd-green), var(--thymynd-green_grad));}
 } */
+#summary {
+  text-align: justify;
+}
 
 figcaption {
   color: white;
@@ -148,8 +151,17 @@ input[type="email"],
 input[type="text"] {
   font-family: Monospace;
 }
-
 /* different screen sizes */
+
+@media (max-width: 1245px) {
+  #expand-form-btn {
+    padding: 12px;
+    margin: 20px 32% 20px 8%;
+    border-radius: 35px;
+    width: 40%;
+    font-size: 1.2rem;
+  }
+}
 
 /* mobile first */
 /* mobile phone */
@@ -231,6 +243,7 @@ input[type="text"] {
     /* position: relative; */
     height: auto;
     /* margin: 0px 0px 30px 0px; */
+    text-align: center;
   }
 
   /* screen size dependent */
@@ -278,7 +291,7 @@ input[type="text"] {
   }
 
   #fig-mental figcaption {
-    margin: 0 15%;
+    text-align: center;
   }
 
   /* screen size dependent */
@@ -417,6 +430,8 @@ input[type="text"] {
 
   /* classes for JS to toggle */
 }
+
+/* tablets */
 
 /* desktop */
 /* don't change this coz bootstrap row changes at 991px */
