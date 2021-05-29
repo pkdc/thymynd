@@ -197,19 +197,30 @@ input[type="text"] {
 
   .nav-bar-btn-mob {
     position: absolute;
-    padding: 7px 20px;
+    padding: 0.2em 0.6em;
     top: 0;
     right: 0;
-    font-size: 34px;
+    font-size: 2.15em;
     border: none;
+  }
+
+  .nav-bar-btn-mob:focus {
+    outline: none;
   }
 
   .nav-bar-item {
     display: block;
     background-color: white;
-    padding: 5px;
+    padding: 0.2em;
+    border: 0.1em solid var(--thymynd-white1);
   }
 
+  .nav-bar-item:first-of-type {
+    padding-top: 0.4em;
+  }
+  .nav-bar-item:last-of-type {
+    padding-bottom: 0.4em;
+  }
   /* screen size dependent */
   .nav-bar-item a {
     /* text-decoration: none; */
@@ -296,9 +307,9 @@ input[type="text"] {
 
   /* screen size dependent */
   #expand-form-btn {
-    padding: 12px;
-    margin: 20px 25%;
-    border-radius: 35px;
+    padding: 0.8em;
+    margin: 1.6em 25%;
+    border-radius: 2.2em;
     width: 50%;
     font-size: 1.2em;
   }
@@ -360,16 +371,15 @@ input[type="text"] {
   .form-btn {
     background-color: var(--thymynd-green, green);
     color: white;
-    padding: 19px;
-    margin: 20px 0px 60px 0px;
+    padding: 1em;
+    margin: 1.1em 0px 3.3em 0px;
     cursor: pointer;
     border: none;
-    border-radius: 35px;
+    border-radius: 2em;
     width: 75%;
-    font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     transition: background-color 0.3s ease;
-    font-size: 16px;
+    font-size: 1.2em;
   }
 
   /* screen size dependent */
