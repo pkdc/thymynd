@@ -266,7 +266,7 @@ input[type="text"] {
     margin: 0;
     font-size: 2.6rem;
     font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   /* screen size dependent */
@@ -275,7 +275,7 @@ input[type="text"] {
     padding-top: 60px;
     font-size: 2.6rem;
     font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   /* screen size dependent */
@@ -411,6 +411,7 @@ input[type="text"] {
     padding-bottom: 10px;
     font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
     margin-left: -10px;
+    font-weight: 400;
     /* margin-left: 30px; */
   }
 
