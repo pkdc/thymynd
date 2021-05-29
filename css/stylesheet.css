@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  font-family: Open Sans;
 }
 .clearfix::after {
   content: "";
@@ -217,9 +218,11 @@ input[type="text"] {
 
   .nav-bar-item:first-of-type {
     padding-top: 0.4em;
+    border-top: 0.5em solid var(--thymynd-grey);
   }
   .nav-bar-item:last-of-type {
     padding-bottom: 0.4em;
+    border-bottom: 0.5em solid var(--thymynd-grey);
   }
   /* screen size dependent */
   .nav-bar-item a {
