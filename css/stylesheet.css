@@ -301,7 +301,7 @@ input[type="text"] {
 
   #fig-mental img {
     width: 70%;
-    margin: 0 15%;
+    margin: 0 15% 1em 15%;
     border-radius: 0.1em;
   }
 
@@ -547,9 +547,9 @@ input[type="text"] {
 
   #fig-mental img {
     /* padding-left: 0em; */
-    width: 30rem;
+    width: 27rem;
     border-radius: 0.2em;
-    margin: 1em;
+    margin: 0em 1em;
   }
 
   #fig-mental figcaption {
