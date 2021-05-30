@@ -302,6 +302,7 @@ input[type="text"] {
   #fig-mental img {
     width: 70%;
     margin: 0 15%;
+    border-radius: 0.1em;
   }
 
   #fig-mental figcaption {
@@ -539,14 +540,16 @@ input[type="text"] {
   /* screen size dependent */
   #fig-mental {
     display: inline-block;
-    margin: 65px 5% 50px 10%;
+    margin: 35px 5% 50px 10%;
     /* width: 40%; */
     /* min-width: 395px; */
   }
 
   #fig-mental img {
-    width: 25rem;
-    border-radius: 20%;
+    /* padding-left: 0em; */
+    width: 30rem;
+    border-radius: 0.2em;
+    margin: 1em;
   }
 
   #fig-mental figcaption {
