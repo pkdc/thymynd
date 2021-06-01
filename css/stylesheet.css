@@ -74,7 +74,7 @@ header {
 
 #landing-page {
   /* background-color: var(--thymynd-green, green); */
-  background-image: linear-gradient(
+  background: linear-gradient(
     to left,
     var(--thymynd-green),
     var(--thymynd-green_grad)
