@@ -67,9 +67,14 @@ header {
   background-color: var(--thymynd-green, #2ecc71);
 }
 
-.nav-bar-btn-mob {
+header > a:focus {
+  outline: none;
+}
+
+#nav-bar-btn-mob {
   background-color: var(--thymynd-green, #2ecc71);
   color: white;
+  display: block;
 }
 
 #landing-page {
@@ -180,8 +185,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  header nav {
-    display: none;
+  header #nav-bar {
     /* flex-direction: row-reverse;
       margin-right: 40px; */
     /* display: inline-block; */
@@ -191,21 +195,23 @@ input[type="text"] {
     padding-bottom: 0px;
   }
 
-  header nav ul {
+  header > nav > ul {
+    display: none;
     padding: 0;
     margin: 0;
   }
 
-  .nav-bar-btn-mob {
+  #nav-bar-btn-mob {
     position: absolute;
     padding: 0.2em 0.6em;
     top: 0;
     right: 0;
     font-size: 2.15em;
     border: none;
+    z-index: 1000;
   }
 
-  .nav-bar-btn-mob:focus {
+  #nav-bar-btn-mob:focus {
     outline: none;
   }
 
@@ -452,25 +458,32 @@ input[type="text"] {
 /* don't change this coz bootstrap row changes at 991px */
 @media (min-width: 991px) {
   /* screen size dependent */
-  #logo {
-    /* background-color: var(--thymynd-green, green); */
+  /* #logo {
+    background-color: var(--thymynd-green, green);
     float: left;
     margin: 0px 0 0 10px;
-  }
+  } */
 
   /* screen size dependent */
-  header nav {
+  header #nav-bar {
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 10px;
   }
 
-  .nav-bar-btn-mob {
+  header #nav-bar-links {
+    display: flex;
+  }
+
+  #nav-bar-btn-mob {
     display: none;
   }
 
   .nav-bar-item {
     display: inline-block;
+    /* flex: 1 0 0%; */
   }
 
   /* screen size dependent */
@@ -791,7 +804,7 @@ input[type="text"] {
 
 /* classes for JS to toggle */
 
-/* to display the hidden nav-bar */
+/* to display the hidden nav-bar-lsit and subscribe form */
 .show {
   display: block;
 }
