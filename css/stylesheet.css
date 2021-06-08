@@ -75,6 +75,7 @@ header > a:focus {
   background-color: var(--thymynd-green, #2ecc71);
   color: white;
   display: block;
+  z-index: 1000;
 }
 
 #landing-page {
@@ -122,6 +123,7 @@ figcaption a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1000;
   transition: background-color 0.3s ease;
 }
 
@@ -159,20 +161,20 @@ input[type="text"] {
 }
 /* different screen sizes */
 
-@media (max-width: 1245px) {
+@media (max-width: 1373px) {
   #expand-form-btn {
-    padding: 12px;
-    margin: 20px 32% 20px 8%;
-    border-radius: 35px;
-    width: 40%;
-    font-size: 1.2rem;
+    /* padding: 12px; */
+    margin: 20px 33% 20px 7%;
+    /* border-radius: 35px; */
+    /* width: 35px; */
+    /* font-size: 1.2rem; */
   }
 }
 
 /* mobile first */
 /* mobile phone */
 /* don't change this coz bootstrap row changes at 991px */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   /* screen size dependent */
   #logo {
     /* background-color: var(--thymynd-green, green); */
@@ -208,7 +210,6 @@ input[type="text"] {
     right: 0;
     font-size: 2.15em;
     border: none;
-    z-index: 1000;
   }
 
   #nav-bar-btn-mob:focus {
@@ -216,7 +217,7 @@ input[type="text"] {
   }
 
   .nav-bar-item {
-    display: block;
+    /* display: block; */
     background-color: white;
     padding: 0.2em;
     border: 0.1em solid var(--thymynd-white1);
@@ -456,7 +457,7 @@ input[type="text"] {
 
 /* desktop */
 /* don't change this coz bootstrap row changes at 991px */
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   /* screen size dependent */
   /* #logo {
     background-color: var(--thymynd-green, green);
@@ -470,11 +471,13 @@ input[type="text"] {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 30px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   header #nav-bar-links {
     display: flex;
+    flex-direction: row;
+    align-items: space-between;
   }
 
   #nav-bar-btn-mob {
@@ -489,6 +492,7 @@ input[type="text"] {
   /* screen size dependent */
   .nav-bar-item a {
     text-decoration: none;
+    font-size: 1.1rem;
     color: white;
     padding: 23px 10px;
     margin: 0px 0 -17px 0;
@@ -577,6 +581,7 @@ input[type="text"] {
     margin-bottom: 30px;
     border-radius: 35px;
     width: 42%;
+    min-width: 35rem;
     font-size: 20px;
   }
 
