@@ -1,0 +1,118 @@
+:root {
+  --green: #2ecc71;
+  --green_grad: rgb(40, 179, 99);
+  --white1: whitesmoke;
+  --grey: #eaecee;
+  --grey2: #7a7d7d;
+  --orange0: #ffdb99;
+  --orange: #ffb300;
+  --orange2: #ffb404;
+  --lightred: #c08497;
+  --green-shadow: 0 1px 5px rgba(40, 179, 99, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Open Sans;
+}
+body {
+  margin: 0;
+  line-height: 1.58;
+  background-color: #fff;
+  color: #000;
+}
+h1 {
+  /* margin to 0, to remove the white space between header and main text */
+  margin: 0;
+  font-size: 2.6rem;
+  font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
+  font-weight: 700;
+}
+img {
+  /* max-width: 100%; */
+}
+.wrapper {
+  display: grid;
+  grid-gap: 0px 20px;
+}
+
+/* navigation */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--green);
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.nav-bar img {
+  width: 230px;
+}
+
+.nav-bar ul {
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav-bar ul a {
+  display: block;
+  background-color: var(--green);
+  color: #fff;
+  padding: 2rem 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color ease 0.3s;
+}
+
+.nav-bar ul a:hover {
+  background-color: #fff;
+  color: var(--green);
+  /* box-shadow: var(--green-shadow); */
+}
+.landing {
+  background: linear-gradient(to left, var(--green), var(--green_grad));
+}
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "description mental-img"
+    "expand expand";
+  color: #fff;
+}
+
+.description {
+  grid-area: description;
+  padding: 2rem 5rem;
+  min-width: 400px;
+}
+
+.description-content {
+  font-family: Open-Sans;
+  font-size: 1.3rem;
+}
+.fig-mental {
+  grid-area: mental-img;
+  padding: 1.5rem;
+}
+.fig-mental figcaption {
+  width: 60%;
+}
+#expand-form-btn {
+  grid-area: expand;
+}
+
+/* mobile */
+@media (min-width: 768px) {
+  .mob-nav-bar {
+    display: none;
+  }
+}
