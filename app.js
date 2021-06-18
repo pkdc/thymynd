@@ -1,8 +1,8 @@
 //  code for nav-bar-btn-mob
 "use strict";
 
-const navBarBtn = document.getElementById("nav-bar-btn-mob");
-const navBar = document.getElementById("nav-bar-links");
+const navBarBtn = document.querySelector(".nav-bar-btn-mob");
+const navBar = document.querySelector(".nav-bar-links");
 console.log(navBarBtn);
 console.log(navBar);
 
@@ -17,7 +17,7 @@ navBarBtn.addEventListener("click", () => {
 
   navBarBtn.classList.toggle("nav-bar-btn-active");
   // console.log(navBar);
-  navBar.classList.toggle("show");
+  navBar.classList.toggle("show-menu");
 
   console.log(navDisplay);
 });
@@ -31,5 +31,5 @@ expandForm.addEventListener("click", () => {
   // const formDisplay = formStyle.getPropertyValue('display');
 
   expandForm.classList.toggle("change-colour-grey");
-  form.classList.toggle("show");
+  form.classList.toggle("show-form");
 });
