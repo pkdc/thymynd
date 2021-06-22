@@ -9,21 +9,12 @@
   --thymynd-orange2: #ffb404;
   --thymynd-lightred: #c08497;
 }
-
+html {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Open Sans;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1,
@@ -102,7 +93,7 @@ animation-duration: 1s; */
 
   100% {background-image: linear-gradient(to left, var(--thymynd-green), var(--thymynd-green_grad));}
 } */
-#summary {
+#top-container {
   text-align: justify;
 }
 
@@ -170,22 +161,16 @@ input[type="text"] {
     /* font-size: 1.2rem; */
   }
 }
-
+#logo {
+  height: 67px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* mobile first */
 /* mobile phone */
 /* don't change this coz bootstrap row changes at 991px */
 @media (max-width: 992px) {
-  /* screen size dependent */
-  #logo {
-    /* background-color: var(--thymynd-green, green); */
-    /* float: left; */
-
-    /* padding: 10px 0 0 0px; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   /* screen size dependent */
   header #nav-bar {
     /* flex-direction: row-reverse;
@@ -197,7 +182,7 @@ input[type="text"] {
     padding-bottom: 0px;
   }
 
-  header > nav > ul {
+  header nav ul {
     display: none;
     padding: 0;
     margin: 0;
@@ -239,6 +224,7 @@ input[type="text"] {
     font-weight: 700;
     font-size: 20px;
     margin: 20px;
+    text-transform: uppercase;
     /* transition: all ease 0.3s; */
   }
 
@@ -254,7 +240,7 @@ input[type="text"] {
   } */
 
   /* screen size dependent */
-  #summary {
+  #top-container {
     width: auto;
     /* min-width: 300px; */
     color: white;
@@ -268,10 +254,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  #summary h1,
-  #reference h1,
-  #us h1,
-  #us-no-id h1 {
+  h1 {
     /* margin to 0, to remove the white space between header and main text */
     margin: 0;
     font-size: 2.6rem;
@@ -289,7 +272,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  #summary h2 {
+  #top-container h2 {
     font-size: 1.3rem;
     font-family: Open Sans;
     font-weight: 700;
@@ -297,7 +280,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  #summary-content {
+  #top-container-content {
     width: 500px;
   }
 
@@ -459,14 +442,8 @@ input[type="text"] {
 /* don't change this coz bootstrap row changes at 991px */
 @media (min-width: 992px) {
   /* screen size dependent */
-  /* #logo {
-    background-color: var(--thymynd-green, green);
-    float: left;
-    margin: 0px 0 0 10px;
-  } */
-
-  /* screen size dependent */
   header #nav-bar {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -499,6 +476,7 @@ input[type="text"] {
     font-weight: 700;
     display: inline-block;
     transition: background-color ease 0.3s;
+    text-transform: uppercase;
   }
 
   /* screen size dependent */
@@ -509,7 +487,7 @@ input[type="text"] {
     /* font-weight: 700; */
   }
   /* screen size dependent */
-  #summary {
+  #top-container {
     width: 40rem;
     display: inline-block;
     color: white;
@@ -521,10 +499,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  #summary h1,
-  #reference h1,
-  #us h1,
-  #us-no-id h1 {
+  h1 {
     /* margin to 0, to remove the white space between header and main text */
     margin: 0;
     font-size: 2.6rem;
@@ -542,7 +517,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  #summary h2 {
+  #top-container h2 {
     font-size: 1.3rem;
     font-family: Open Sans;
     font-weight: 700;
@@ -550,7 +525,7 @@ input[type="text"] {
   }
 
   /* screen size dependent */
-  #summary-content {
+  #top-container-content {
     width: 500px;
   }
 
@@ -598,34 +573,6 @@ input[type="text"] {
     font-weight: 700;
   }
 
-  /* screen size dependent */
-  .form-input {
-    padding: 20px;
-    /* border: solid var(--thymynd-grey0); */
-    border: none;
-    border-radius: 10px;
-    width: 45%;
-    /* background-color: var(--thymynd-grey, grey); */
-    background-color: white;
-  }
-
-  /* screen size dependent, mobile not needed */
-  .form-input:hover {
-    border: solid 3px var(--thymynd-grey2, #c6ccd2);
-    padding: 17px;
-    /* background-color: var(--thymynd-grey); */
-  }
-
-  .form-input-checkbox {
-    margin-top: 40px;
-  }
-
-  .form-label-checkbox {
-    color: var(--thymynd-orange, orange);
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-  }
   /* screen size dependent */
   .form-btn {
     background-color: var(--thymynd-green, green);
@@ -717,10 +664,10 @@ input[type="text"] {
   text-decoration: none;
   color: var(--thymynd-orange0, orange);
 }
-#reference {
+.reference {
   margin: 0px 0px 30px 0px;
 }
-#reference h1 {
+.reference h1 {
   margin: 30px;
 }
 
@@ -740,28 +687,28 @@ input[type="text"] {
   background-color: var(--thymynd-grey);
 }
 
-#reference a {
+.reference a {
   color: var(--thymynd-orange, orange);
   font-size: 17.9px;
 }
 
-/* #reference a:visited {
+/* .reference a:visited {
   color: var(--thymynd-orange0, #ff8c00);} */
 
-#reference a:hover {
+.reference a:hover {
   color: var(--thymynd-green, green);
 }
-#reference > ol {
+.reference ol {
   margin: 20px 5px 0px 20px;
 }
 
-#reference > ol > li {
+.reference > ol li {
   font-size: 30px;
 }
-#reference > ol > li > a {
+.reference > ol li a {
   font-size: 30px;
 }
-/* #reference ul p
+/* .reference ul p
 {
   //color: $spgreen;
 } */
