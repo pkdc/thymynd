@@ -1,55 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 	<head>
-		<title> Thymynd - Contact Us Through Email </title>
-		<meta name="keywords" content="Contact Us, ThyMynd">
-		<meta name="author" content="David Choy and Monique Ho">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/stylesheet.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="icon" type="img/png" sizes="48x48" href="images/icon.png">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Oswald:wght@400;700&family=Raleway:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-				
-		<script src="https://kit.fontawesome.com/7291736940.js" crossorigin="anonymous"></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Thymynd - Making quality decisions, for one and all</title>
+		<meta name="keywords"
+			content="young offenders, youth offenders, custody,
+     support, decision, decision making, quality decision, quality decision making,
+     prison, psychiatry, mental, mental health, prepare, thought, data, for one and all" />
+		<meta name="author"
+			content="David Choy and Monique Ho" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+		<link rel="stylesheet"
+			href="css/style.css" />
+		<link rel="icon"
+			type="img/png"
+			sizes="48x48"
+			href="images/icon.png" />
+		<link rel="preconnect"
+			href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Oswald:wght@400;700&family=Raleway:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap"
+			rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/7291736940.js"
+			crossorigin="anonymous"></script>
 	</head>
 
-<!-- <?php
-  include_once "includes/header.php";
-?> -->
+	<body>
+		<div class="wrapper-contact">
+			<!-- navigation -->
+			<nav class="mob-nav-bar">
+				<button class="nav-bar-btn-mob"
+					id="menu-btn-mob">
+					<i id="bars"
+						class="fas fa-bars fa-2x"></i>
+				</button>
+			</nav>
+			<nav class="nav-bar">
+				<a href="index.html"><img src="images/thy-logo.png"
+						alt="logo"
+						id="logo" /></a>
+				<ul class="nav-bar-links">
+					<li class="nav-bar-item"><a href="index.html">Home</a></li>
+					<li class="nav-bar-item"><a href="ref.html">Research</a></li>
+					<li class="nav-bar-item"><a href="about_non_id.html">About Us</a></li>
+					<li class="nav-bar-item"><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- header.php -->
+			<section class="contact-us">
+				<header>
+					<h1> Send email to us</h1>
+				</header>
+				<section class="contact_form">
+					<form class="form"
+						action="includes/sub-inc.php"
+						method="POST">
+						<div class="form-label-container">
+							<label class="form-label"
+								for="con-name"> Name </label>
+						</div>
 
-<!-- header.php -->
-<body>
-	<header>
-		<nav id="mob-nav-bar">
-			<button id="nav-bar-btn-mob">
-				<i id="bars" class="fas fa-bars"></i>
-			</button>
-		</nav>
-		<nav id="nav-bar">
-			<a href="index.html"><img id="logo" src="images/thy-logo.png" alt="logo" style="height:67px"></a>
-			<ul id="nav-bar-links">
-				<li class="nav-bar-item"><a href="index.html">Home</a></li>
-				<!-- <li class="nav-bar-item"><a href="product.php">Product</a></li> -->
-				<!-- <li class="nav-bar-item"><a href="ref.php">Research</a></li>
-				<li class="nav-bar-item"><a href="about.php""#">About Us</a></li>
-				<li class="nav-bar-item"><a href="contact.php""#">Contact Us</a></li> -->
-				<li class="nav-bar-item"><a href="ref.html""#">Research</a></li>
-				<li class="nav-bar-item"><a href="about_non_id.html""#">About Us</a></li>
-				<li class="nav-bar-item"><a href="contact.html""#">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- header.php -->
-<section id="contact-us">
-	<h1> Send email to us</h1>
-	<section class="contact_form">
-		<form action="includes/sub-inc.php" method="POST">
-			<div>
-				<label class="form-label" for="con-name"> Name </label>
-			</div>
-
-			<!-- <?php
+						<!-- <?php
 			//problem with GET?
 				if(isset($_GET['first'])) {
 					echo '<input class="form-input" type="text" name="first" accesskey="f" value="'.$_GET['first'].'">';
@@ -59,16 +82,23 @@
 					}
 			 ?> -->
 
-			 <!-- shld not be in php -->
-			 <div>
-				<input class="form-input" id="con-name" type="text" name="name" accesskey="n" placeholder="My name">
-			 </div>
-			 <!-- shld not be in php -->
+						<!-- shld not be in php -->
+						<div>
+							<input class="form-input"
+								id="con-name"
+								type="text"
+								name="name"
+								accesskey="f"
+								placeholder="My name"
+								required>
+						</div>
+						<!-- shld not be in php -->
 
-			<div>
-				<label class="form-label" for="con-email" required> Email </label>
-			</div>
-			<!-- <?php
+						<div class="form-label-container">
+							<label class="form-label"
+								for="con-email"> Email </label>
+						</div>
+						<!-- <?php
 				if(isset($_GET['email'])) {
 					echo '<input class="form-input" type="email" accesskey="e" placeholder="Enter my email address" value="'.$_GET['email'].'">';
 				}
@@ -77,32 +107,51 @@
 				}
 			 ?> -->
 
-			 <!-- shld not be in php -->
-			 <div>
-				<input class="form-input" id="con-email" type="email" name="email" accesskey="e" placeholder="Enter my email address">
-			 </div>
-			 <!-- shld not be in php -->
-			<div>
-				<label class="form-label" for="con-subject"> Subject </label>
-			</div>
+						<!-- shld not be in php -->
+						<div>
+							<input class="form-input"
+								id="con-email"
+								type="email"
+								name="email"
+								accesskey="e"
+								placeholder="Enter my email address"
+								required>
+						</div>
+						<!-- shld not be in php -->
+						<div class="form-label-container">
+							<label class="form-label"
+								for="con-subject"> Subject </label>
+						</div>
 
-			<div>
-				<input name="subject" id="con-subject" type="text" class="form-input" placeholder="Subject"> </input>
-			</div>
+						<div>
+							<input name="subject"
+								id="con-subject"
+								type="text"
+								class="form-input"
+								placeholder="Subject"
+								required> </input>
+						</div>
 
-			<div>
-				<label class="form-label" for="con-msg"> Message </label>
-			</div>
+						<div class="form-label-container">
+							<label class="form-label"
+								for="con-msg"> Message </label>
+						</div>
 
-			<div>
-				 <textarea name="message" id="con-msg" class="form-input" placehoder="My message" rows="6"> </textarea>
-			</div>
+						<div>
+							<textarea name="message"
+								id="con-msg"
+								class="form-input"
+								placehoder="My message"
+								rows="9"> </textarea>
+						</div>
 
-			<div>
-				<button class="form-btn" name="submit" type="submit"> Send My Message </button>
-			</div>
-		</form>
-	<!-- <form action="includes/contact-inc.php" method="POST" class="contact_form">
+						<div>
+							<button class="form-btn"
+								name="submit"
+								type="submit"> Send My Message </button>
+						</div>
+					</form>
+					<!-- <form action="includes/contact-inc.php" method="POST" class="contact_form">
 	  <label class="form-label" for="text"> Name </label>
 	  <input name="name" type="text" class="form-input" placeholder="My name"> </input>
 
@@ -117,24 +166,27 @@
 
 
 	</form> -->
-</section>
-<!-- <?php
+				</section>
+				<!-- <?php
   include_once "includes/footer.php";
 ?> -->
-<!-- php footer -->
-<footer id="contact">
-   <a href="contact.php" class="white_a">Contact us</a> to explore.<br>
-  Please view this on desktop or laptop.<br>
-  Our work is evolving - check us out again soon.<br>
-  <!-- <a href="unsub.php" class="white_a">Unsubscribe</a> -->
-  You can unsubscibe anytime by <a href="contact.php" class="white_a">emailing us</a>.<br>
-  This privacy policy notice is served by Thymynd,
-   under the website; https://thymynd.website. The purpose of<br>
-   this policy is to explain to you how we control, process, handle
-    and protect your personal information through the business and<br>
-    while you browse or use this website. If you do not agree to the
-     following policy you may wish to cease viewing / using this website,<br>
-      and or refrain from submitting your personal data to us.
-</footer>
-<!-- php footer -->
-<script src="app.js"> </script>
+				<!-- php footer -->
+				<footer id="contact">
+					<a href="contact.php"
+						class="white_a">Contact us</a> to explore.<br>
+					Please view this on desktop or laptop.<br>
+					Our work is evolving - check us out again soon.<br>
+					<!-- <a href="unsub.php" class="white_a">Unsubscribe</a> -->
+					You can unsubscibe anytime by <a href="contact.php"
+						class="white_a">emailing us</a>.<br>
+					This privacy policy notice is served by Thymynd,
+					under the website; https://thymynd.website. The purpose of<br>
+					this policy is to explain to you how we control, process, handle
+					and protect your personal information through the business and<br>
+					while you browse or use this website. If you do not agree to the
+					following policy you may wish to cease viewing / using this
+					website,<br>
+					and or refrain from submitting your personal data to us.
+				</footer>
+				<!-- php footer -->
+				<script src="app.js"> </script>
