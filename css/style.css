@@ -1,3 +1,8 @@
+html {
+	box-sizing: border-box;
+	font-family: Open Sans;
+}
+
 :root {
 	--green: #2ecc71;
 	--green_grad: rgb(40, 179, 99);
@@ -11,11 +16,6 @@
 	--orange2: #ffb404;
 	--lightred: #c08497;
 	--green-shadow: 0 1px 5px rgba(40, 179, 99, 0.8);
-}
-
-html {
-	box-sizing: border-box;
-	font-family: Open Sans;
 }
 
 body {
