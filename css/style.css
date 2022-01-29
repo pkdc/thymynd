@@ -24,11 +24,13 @@ body {
 	background-color: #fff;
 	color: #000;
 }
+
 * {
 	line-height: 1.58;
 	animation-name: text-fade-in;
 	animation-duration: 1s;
 }
+
 h1 {
 	/* margin to 0, to remove the white space between header and main text */
 	margin: 0;
@@ -36,6 +38,7 @@ h1 {
 	font-family: Oswald, Roboto, Roboto Condensed, Raleway, League Gothic;
 	font-weight: 700;
 }
+
 img {
 	/* max-width: 100%; */
 }
@@ -43,6 +46,7 @@ img {
 a {
 	text-decoration: none;
 }
+
 h1::selection,
 h2::selection,
 h3::selection,
@@ -62,6 +66,7 @@ figcaption::selection {
 		opacity: 1;
 	}
 }
+
 .hidden {
 	display: none;
 }
@@ -114,9 +119,11 @@ figcaption::selection {
 	color: var(--green);
 	/* box-shadow: var(--green-shadow); */
 }
+
 .landing {
 	background: linear-gradient(to left, var(--green), var(--green_grad));
 }
+
 .top-container {
 	display: grid;
 	grid-gap: 20px;
@@ -137,24 +144,30 @@ figcaption::selection {
 	font-family: Open-Sans;
 	font-size: 1.3rem;
 }
+
 .fig-mental {
 	grid-area: mental-img;
 	padding: 1.5rem;
 	width: 25rem;
 	margin: auto;
 }
+
 .fig-mental p {
 	margin: 0;
 }
+
 .fig-mental img {
 	width: 25rem;
 }
+
 .fig-mental figcaption {
 	width: 25rem;
 }
+
 .fig-mental a {
 	color: var(--orange0);
 }
+
 .green-bkg-btn {
 	background-color: white;
 	color: var(--thymynd-green, #2ecc71);
@@ -167,6 +180,7 @@ figcaption::selection {
 	z-index: 10;
 	transition: background-color 0.3s ease;
 }
+
 #expand-form-btn {
 	grid-area: expand;
 	padding: 1.2rem;
@@ -175,11 +189,13 @@ figcaption::selection {
 	margin: 1.9rem auto;
 	font-size: 1.3rem;
 }
+
 #expand-form-btn .fa-chevron-circle-down {
 	margin-left: 10%;
 	margin-right: 10%;
 	font-size: 1.6rem;
 }
+
 #expand-form-btn:hover {
 	background-color: var(--grey, grey);
 }
